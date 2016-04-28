@@ -33,8 +33,8 @@ public class UserController {
 		List<User> findAll = userService.findAll();
 		System.out.println(findAll);
 //		request.setAttribute("user", findAll);
-//		return "/allUser";
-		ModelAndView mav=new ModelAndView("allUser");
+//		return "/allUser2";
+		ModelAndView mav=new ModelAndView("index");
         mav.addObject("user",findAll);
         return mav;
 	}

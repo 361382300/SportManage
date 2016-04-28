@@ -3,11 +3,11 @@
   type="WEB"
   name="SportManage"
   id="myeclipse.1429448673611"
-  context-root="/SpringMVC_Spring_mybatis"
+  context-root="/SportManage"
   j2ee-spec="5.0"
   archive="SportManage.war">
   <attributes>
-    <attribute name="webrootdir" value="/WebRoot" />
+    <attribute name="webrootdir" value="WebRoot" />
   </attributes>
 </project-module>
 
