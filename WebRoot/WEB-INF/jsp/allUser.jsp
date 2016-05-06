@@ -11,10 +11,6 @@
 <head>
 <link href="test.css" rel="stylesheet" type="text/css">
 
-<style type="text/css">
-
-/* .test {color: #FF0000} */
-</style>
 <base href="<%=basePath%>">
 <script type="text/javascript" src="js/jquery-1.7.1.js"></script>
 <title>用户列表</title>
@@ -40,7 +36,7 @@
 	<table border="1">
 		<tbody>
 			<tr>
-				<th class="test">姓名</th>
+				<th >姓名</th>
 				<th>年龄</th>
 				<th>操作</th>
 			</tr>

@@ -99,7 +99,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                     <a href="flot.html">賽事信息</a>
                                 </li>
                                 <li>
-                                    <a href="morris.html">比赛项目</a>
+                                    <a href="<%=basePath%>WEB-INF/jsp/eventsInput.jsp">比赛项目</a>
                                 </li>
                             </ul>                           
                         </li>
@@ -125,14 +125,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">赛事信息</h1>
+                    <h1 class="page-header">人数统计</h1>
                 </div>                
             </div>            
             <div class="row">
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                                                                    赛事列表
+                                                                    统计表单
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">  
@@ -141,51 +141,46 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                     <thead>
                                         <tr>
                                             <th>序号</th>
-                                            <th>赛事</th>
-                                            <th>操作</th>                                           
+                                            <th>单位</th>
+                                            <th>领队</th>                                           
+                                            <th>教练</th>                                           
+                                            <th>工作人员</th>                                           
+                                            <th>男运动员</th>                                           
+                                            <th>女运动员</th>                                           
+                                            <th>合计</th>                                            
                                         </tr>
                                     </thead>
-                                    <tbody>
+                                    <tbody>                                       
                                         <tr class="odd ">
-                                            <td></td>
-                                            <td><input  class="form-control" >  </td>
-                                            <td>
-                                            <button type="button" class="btn btn-info btn-sm">添加</button>&nbsp;                                            
-                                            </td>                                          
-                                        </tr>
+                                            <td>1</td>                                            
+                                            <td >广州市第九十七中学</td>
+                                            <td>1</td>                                            
+                                            <td>1</td>                                            
+                                            <td>1</td>                                            
+                                            <td>10</td>                                            
+                                            <td>5</td>                                            
+                                            <td>18</td>                    
+                                        </tr>                                                            
                                         <tr class="odd ">
-                                            <td>1</td>
-                                            <td>2016年海珠区第五届中、小学生武术锦标赛</td>
-                                            <td>
-                                            <button type="button" class="btn btn-success btn-sm">进入</button>&nbsp;                                            
-                                            <button type="button" class="btn btn-primary btn-sm" >编辑</button>
-                                             <button id="d2" style="display:none;" type="button" class="btn btn-primary btn-sm" onClick="updatename()">完成</button>&nbsp;
-                                            <button type="button" class="btn btn-danger btn-sm">删除</button>&nbsp;                                        
-                                            </td>                                          
-                                        </tr>
+                                            <td>2</td>                                            
+                                            <td >工业大道中小学 </td>
+                                            <td>1</td>                                            
+                                            <td>1</td>                                            
+                                            <td>1</td>                                            
+                                            <td>15</td>                                            
+                                            <td>6</td>                                            
+                                            <td>24</td>                    
+                                        </tr>                                                            
                                         <tr class="odd ">
-                                            <td>2</td>
-                                            <td>2015年海珠区第四届中、小学生武术锦标赛</td>
-                                            <td>
-                                            <button type="button" class="btn btn-success btn-sm">进入</button>&nbsp;                                            
-                                            <button type="button" class="btn btn-primary btn-sm">编辑</button>
-                                             <button id="d2" style="display:none;" type="button" class="btn btn-primary btn-sm" onClick="updatename()">完成</button>&nbsp;
-                                            <button type="button" class="btn btn-danger btn-sm">删除</button>                                       
-                                            </td>
-                                           
-                                        </tr>
-                                        <tr class="odd ">
-                                            <td>3</td>
-                                            <td id="t">2011年海珠区第三届中、小学生武术锦标赛</td>
-                                            <td  id="i"  style="display:none;"><input value="2011年海珠区第三届中、小学生武术锦标赛" class="form-control" ></td>
-                                            
-                                            <td>
-                                            <button type="button" class="btn btn-success btn-sm">进入</button>&nbsp;                                            
-                                            <button id="d" type="button" class="btn btn-primary btn-sm" onClick="rename()">编辑</button>
-                                            <button id="d2" style="display:none;" type="button" class="btn btn-primary btn-sm" onClick="updatename()">完成</button> &nbsp;
-                                           <button type="button" class="btn btn-danger btn-sm">删除</button>                                       
-                                            </td>                                           
-                                        </tr>                                       
+                                            <td></td>                                            
+                                            <td >合计</td>
+                                            <td>2</td>                                            
+                                            <td>2</td>                                            
+                                            <td>2</td>                                            
+                                            <td>25</td>                                            
+                                            <td>11</td>                                            
+                                            <td>42</td>                    
+                                        </tr>                                                            
                                     </tbody>
                                 </table>
                             </div> 
@@ -194,7 +189,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 </div>               
             </div>   
             </div>                           
-           </div>                    
+            </div>                    
               
 
 	<!-- jQuery -->

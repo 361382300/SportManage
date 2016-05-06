@@ -132,7 +132,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                                                                    赛事列表
+                                                                    学校列表
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">  
@@ -141,7 +141,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                     <thead>
                                         <tr>
                                             <th>序号</th>
-                                            <th>赛事</th>
+                                            <th>学校</th>
                                             <th>操作</th>                                           
                                         </tr>
                                     </thead>
@@ -154,38 +154,26 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                             </td>                                          
                                         </tr>
                                         <tr class="odd ">
-                                            <td>1</td>
-                                            <td>2016年海珠区第五届中、小学生武术锦标赛</td>
+                                            <td>1</td>                                            
+                                            <td id="t">广州市第九十七中学</td>
+                                            <td  id="i"  style="display:none;"><input value="广州市第九十七中学" class="form-control" ></td>
                                             <td>
                                             <button type="button" class="btn btn-success btn-sm">进入</button>&nbsp;                                            
-                                            <button type="button" class="btn btn-primary btn-sm" >编辑</button>
+                                            <button id="d" type="button" class="btn btn-primary btn-sm" onClick="rename()">编辑</button>
                                              <button id="d2" style="display:none;" type="button" class="btn btn-primary btn-sm" onClick="updatename()">完成</button>&nbsp;
                                             <button type="button" class="btn btn-danger btn-sm">删除</button>&nbsp;                                        
                                             </td>                                          
                                         </tr>
                                         <tr class="odd ">
-                                            <td>2</td>
-                                            <td>2015年海珠区第四届中、小学生武术锦标赛</td>
-                                            <td>
-                                            <button type="button" class="btn btn-success btn-sm">进入</button>&nbsp;                                            
-                                            <button type="button" class="btn btn-primary btn-sm">编辑</button>
-                                             <button id="d2" style="display:none;" type="button" class="btn btn-primary btn-sm" onClick="updatename()">完成</button>&nbsp;
-                                            <button type="button" class="btn btn-danger btn-sm">删除</button>                                       
-                                            </td>
-                                           
-                                        </tr>
-                                        <tr class="odd ">
-                                            <td>3</td>
-                                            <td id="t">2011年海珠区第三届中、小学生武术锦标赛</td>
-                                            <td  id="i"  style="display:none;"><input value="2011年海珠区第三届中、小学生武术锦标赛" class="form-control" ></td>
-                                            
+                                            <td>2</td>                                            
+                                            <td id="t">广州市第六中学</td>
+                                            <td  id="i"  style="display:none;"><input value="广州市第六中学" class="form-control" ></td>
                                             <td>
                                             <button type="button" class="btn btn-success btn-sm">进入</button>&nbsp;                                            
                                             <button id="d" type="button" class="btn btn-primary btn-sm" onClick="rename()">编辑</button>
-                                            <button id="d2" style="display:none;" type="button" class="btn btn-primary btn-sm" onClick="updatename()">完成</button> &nbsp;
-                                           <button type="button" class="btn btn-danger btn-sm">删除</button>                                       
-                                            </td>                                           
-                                        </tr>                                       
+                                             <button id="d2" style="display:none;" type="button" class="btn btn-primary btn-sm" onClick="updatename()">完成</button>&nbsp;
+                                            <button type="button" class="btn btn-danger btn-sm">删除</button>                                       
+                                            </td>                            
                                     </tbody>
                                 </table>
                             </div> 

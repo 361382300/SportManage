@@ -29,7 +29,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <base href="<%=basePath%>">
 <script type="text/javascript" src="js/jquery-1.7.1.js"></script>
 <title>武术竞赛管理系统</title>
-	<a href="<%=basePath%>user/getAllUser">进入用户管理页</a>
+	<a href="<%=basePath%>user/getAllUser.do">进入用户管理页</a>
 </head>
 
 <body>
@@ -54,9 +54,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
                     </a>
-                    <ul class="dropdown-menu dropdown-user">                       
-                        <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                    <ul class="dropdown-menu dropdown-user">      
+                                 <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>                    
                 </li>               
@@ -70,7 +69,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> 赛事管理<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="flot.html">参赛信息</a>
+                                    <a href="flot.html">賽事信息</a>
                                 </li>
                                 <li>
                                     <a href="morris.html">比赛项目</a>

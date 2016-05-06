@@ -27,14 +27,14 @@ public class UserController {
 	 * @param request
 	 * @return
 	 */
-	@RequestMapping("/getAllUser")
+	@RequestMapping("/getAllUser.do")
 	public ModelAndView getAllUser(HttpServletRequest request){
 		
 		List<User> findAll = userService.findAll();
 		System.out.println(findAll);
 //		request.setAttribute("user", findAll);
 //		return "/allUser2";
-		ModelAndView mav=new ModelAndView("index");
+		ModelAndView mav=new ModelAndView("membersList");
         mav.addObject("user",findAll);
         return mav;
 	}
